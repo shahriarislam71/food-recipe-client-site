@@ -1,0 +1,2 @@
+1.setup tailwind
+2. Install react dom.

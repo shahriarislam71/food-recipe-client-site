@@ -1,0 +1,243 @@
+/* .section-top{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../../public/Bangladeshi\ Bhorta.jpg);
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+
+@keyframes change{
+    0%{
+        background-image: url(../../../../public/Bangladeshi\ sweets.jpeg);
+        
+    }
+    20%{
+        background-image: url(../../../../public/dhoi.webp);
+    }
+    40%{
+        background-image: url(../../../../public/Shorshe\ Ilish.webp);
+    }
+    60%{
+        background-image: url(../../../../public/fuchka.webp);
+    }
+    80%{
+        background-image: url(../../../../public/hallem.webp);
+    }
+    100%{
+        background-image: url(../../../../public/panta\ bhat.webp);
+    }
+} */
+.section-top {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../../public/Bangladeshi\ Bhorta.jpg);
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out;
+}
+.contents{
+    position: absolute;
+}
+.content {
+    
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.word{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+
+.word1{
+    animation: food1 30s infinite;
+}
+.word2{
+    animation: food2 30s infinite;
+}
+.word3{
+    animation: food3 30s infinite;
+}
+.word4{
+    animation: food4 30s infinite;
+}
+.word5{
+    animation: food5 30s infinite;
+}
+.word6{
+    animation: food6 30s infinite;
+}
+
+@keyframes food1 {
+    0% {
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes food2 {
+    0%{
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40%{
+        opacity: 0.;
+    }
+    60%{
+        opacity: 0.;
+    }
+    80%{
+        opacity: 0.;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes food3 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes food4 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes food5 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes food6 {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes change {
+    0% {
+        background-image: url(../../public/Bangladeshi\ Bhorta.jpg);
+
+    }
+
+    20% {
+        background-image: url(../../../../public/dhoi.webp);
+    }
+
+    40% {
+        background-image: url(../../../../public/Shorshe\ Ilish.webp);
+    }
+
+    60% {
+        background-image: url(../../../../public/fuchka.webp);
+    }
+
+    80% {
+        background-image: url(../../../../public/hallem.webp);
+    }
+
+    100% {
+        background-image: url(../../../../public/panta\ bhat.webp);
+    }
+}

@@ -1,0 +1,158 @@
+.stateTrue {
+    position: absolute;
+    top: -20px;
+}
+
+.statefalse {
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+
+.section-top {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../../public/Bangladeshi\ Bhorta.jpg);
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+
+
+.word1{
+    animation: food1 20s infinite;
+}
+.word2{
+    animation: food2 20s infinite;
+}
+.word3{
+    animation: food3 20s infinite;
+}
+
+@keyframes food1 {
+    0% {
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+@keyframes food2 {
+    0%{
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40%{
+        opacity: 0.;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes food3 {
+    40% {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes change {
+    0% {
+        background-image: url(../../public/Bangladeshi\ Bhorta.jpg);
+
+    }
+
+    20% {
+        background-image: url(../../../../public/dhoi.webp);
+    }
+
+    40% {
+        background-image: url(../../../../public/Shorshe\ Ilish.webp);
+    }
+
+    60% {
+        background-image: url(../../../../public/fuchka.webp);
+    }
+
+    80% {
+        background-image: url(../../../../public/hallem.webp);
+    }
+    90% {
+        background-image: url(../../public/Bangladeshi\ Bhorta.jpg);
+    }
+
+    100% {
+        background-image: url(../../../../public/panta\ bhat.webp);
+    }
+}
+
+
+
+/* .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+The container <div> - needed to position the dropdown content
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+/* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+/* .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} */
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {
+    background-color: #f1f1f1
+} */
+
+/* Show the dropdown menu on hover */
+/* .dropdown:hover .dropdown-content {
+    display: block;
+    right: 0px;
+} */
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}  */ 

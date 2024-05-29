@@ -17,7 +17,7 @@ const Nav = () => {
     }
     return (
         <div className='container'>
-            <div className='p-2 md:p-7 bg-slate-300'>
+            <div  className='p-0 md:p-7 px-0 md:px-20 bg-slate-50'>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center gap-4'>
                         <img className='h-10' src="../../public/foodIcon.png" alt="" />

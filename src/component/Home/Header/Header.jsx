@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css'
 
 const Header = () => {
+    console.log('rafi')
     return (
         <div>
             <div className="section-top">

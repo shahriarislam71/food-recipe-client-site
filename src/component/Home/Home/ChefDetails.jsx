@@ -6,7 +6,7 @@ const ChefDetails = ({ data }) => {
     console.log(name)
     return (
         <div>
-            <div style={{height:'550px'}} className='border rounded-md p-3'>
+            <div style={{height:'554px'}} className='border rounded-md p-3 shadow-2xl'>
                 <img className='object-fill w-full h-80 rounded' src={photo} alt="" />
                 <h1 className='text-xl font-bold mt-3'>Name : {name}</h1>
                 <h1 className='texl-lg font-semibold mt-3'>Years of experience : {years_of_experience}</h1>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Nav.css'
 import Header from '../component/Home/Header/Header';
+import { Link } from 'react-router-dom';
 
 
 
@@ -24,7 +25,8 @@ const Nav = () => {
                         <h2 className='text-rose-600 font-extrabold text-2xl'>Nokshi Polli</h2>
                     </div>
                     <div className='flex gap-5'>
-                        <h1 className='text-xl font-bold'>Home</h1>
+                        <Link className='text-xl font-bold' to={'/'}>Home</Link>
+                        {/* <h1 >Home</h1> */}
                         <h1 className='text-xl font-bold'>Blog</h1>
                     </div>
                     <div>

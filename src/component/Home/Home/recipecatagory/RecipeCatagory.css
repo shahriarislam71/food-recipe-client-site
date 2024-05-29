@@ -1,0 +1,9 @@
+.imageRotation:hover{
+    animation: rotattionImage 3s infinite;
+}
+
+@keyframes rotattionImage{
+    50%{
+        transform: rotate(180deg);
+    }
+}

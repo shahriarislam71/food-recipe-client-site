@@ -5,6 +5,7 @@ import VegetablesRecipe from "../component/Others Pages/vegetables part/Vegetabl
 import BeefRecipe from "../component/Others Pages/beefrecipe/BeefRecipe";
 import ChickenRecipe from "../component/Others Pages/chickenRecipe/ChickenRecipe";
 import DesertRecipe from "../component/Others Pages/desertRecipe/DesertRecipe";
+import ChefRecipe from "../component/Home/Home/chefRecipe/ChefRecipe";
 // import ChefData from "../component/Home/Home/ChefData";
 
 const route = createBrowserRouter([
@@ -36,6 +37,11 @@ const route = createBrowserRouter([
                 path : 'dessert',
                 element : <DesertRecipe></DesertRecipe>,
                 loader : ()=>fetch("http://localhost:5000/dessertrecipe")
+            },
+            {
+                path : 'chefdata/:id',
+                element : <ChefRecipe></ChefRecipe>,
+                loader : ({params})=>fetch(`http://localhost:5000/data/${params.id}`)
             }
             
         ]

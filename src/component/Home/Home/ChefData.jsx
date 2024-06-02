@@ -3,7 +3,7 @@ import React from 'react';
 import ChefDetails from './ChefDetails';
 
 const ChefData = ({ data }) => {
-    console.log(data)
+    // console.log(data)
     return (
         <div>
             <h1 className='text-center mt-16 font-extrabold text-6xl italic'>Chef Details</h1>

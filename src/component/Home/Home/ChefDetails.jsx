@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ChefDetails = ({ data }) => {
     const { id, name, photo, years_of_experience, number_of_recipes, likes } = data
-    console.log(name)
+    console.log(id)
     return (
         <div>
             <div style={{height:'554px'}} className='border rounded-md p-3 shadow-2xl'>

@@ -1,10 +1,12 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import ChefRecipeDetails from './ChefRecipeDetails';
 
 const ChefRecipe = () => {
     const chefRecipeData = useLoaderData()
-    const { name, photo, chef_info, number_of_recipes, years_of_experience, likes } = chefRecipeData
-    console.log(likes)
+    console.log(chefRecipeData)
+    const {  name, photo, chef_info, number_of_recipes, years_of_experience, likes, recipes } = chefRecipeData
+    console.log(recipes)
     return (
         <div>
             {/* banner */}
@@ -18,6 +20,14 @@ const ChefRecipe = () => {
                     <p className='texl-md font-semibold'>Number of the Recipe : {number_of_recipes}</p>
                     <p className='texl-md font-semibold'>Years of experience : {years_of_experience}</p>
                     <p className='texl-md font-semibold'>Likes : {likes}</p>
+                </div>
+            </div>
+            <div>
+                <p className='text-center mt-40 mb-10 text-6xl font-extrabold textdecoration'>{name}'s Recipes</p>
+                <div className='grid grid-cols-3 mx-20 gap-5'>
+                    {
+                        recipes.map(data =><ChefRecipeDetails key={data.idd} data = {data}></ChefRecipeDetails>)
+                    }
                 </div>
             </div>
         </div>

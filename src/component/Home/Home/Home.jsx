@@ -6,7 +6,7 @@ import RecipeCatagories from './recipecatagory/RecipeCatagories';
 
 const Home = () => {
     const data = useLoaderData()
-    console.log(data)
+    // console.log(data)
     return (
         <div>
             <Header></Header>

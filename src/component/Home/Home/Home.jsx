@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 import ChefData from './ChefData';
 import { useLoaderData } from 'react-router-dom';
 import RecipeCatagories from './recipecatagory/RecipeCatagories';
+import LatestRecipe from './LatestRecipe/LatestRecipe';
 
 const Home = () => {
     const data = useLoaderData()
-    // console.log(data)
+    const [latestdata, setlatestData] = useState(null)
+    useEffect(()=>{
+        fetch("http://localhost:5000/latestrecipe")
+        .then(res => res.json())
+        .then(data => setlatestData(data))
+    },[])
+    // console.log(latestdata)
     return (
         <div>
             <Header></Header>
             <ChefData data = {data} key={data.id}></ChefData>
             <RecipeCatagories></RecipeCatagories>
+            <LatestRecipe latestdata = {latestdata}></LatestRecipe>
         </div>
     );
 };

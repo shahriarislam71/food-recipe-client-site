@@ -22,7 +22,7 @@ const Nav = () => {
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center gap-4'>
                         <img className='h-10' src="../../public/foodIcon.png" alt="" />
-                        <h2 className='text-rose-600 font-extrabold text-2xl'>Nokshi Polli</h2>
+                        <h2 className='text-rose-600 font-extrabold text-2xl font-mono italic oldstyle-nums'>Nokshi Polli</h2>
                     </div>
                     <div className='flex gap-5'>
                         <Link className='text-xl font-bold' to={'/'}>Home</Link>

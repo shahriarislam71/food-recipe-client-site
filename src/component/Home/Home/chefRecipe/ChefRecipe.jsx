@@ -6,7 +6,7 @@ const ChefRecipe = () => {
     const chefRecipeData = useLoaderData()
     console.log(chefRecipeData)
     const {  name, photo, chef_info, number_of_recipes, years_of_experience, likes, recipes } = chefRecipeData
-    console.log(recipes)
+    // console.log(recipes)
     return (
         <div>
             {/* banner */}

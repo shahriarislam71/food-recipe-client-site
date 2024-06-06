@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
 import ChefData from './ChefData';
-import { useLoaderData } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import RecipeCatagories from './recipecatagory/RecipeCatagories';
 import LatestRecipe from './LatestRecipe/LatestRecipe';
 import Footer from './Footer/Footer';
@@ -22,6 +22,7 @@ const Home = () => {
             <RecipeCatagories></RecipeCatagories>
             <LatestRecipe latestdata = {latestdata}></LatestRecipe>
             <Footer></Footer>
+            
         </div>
     );
 };

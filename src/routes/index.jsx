@@ -6,6 +6,9 @@ import BeefRecipe from "../component/Others Pages/beefrecipe/BeefRecipe";
 import ChickenRecipe from "../component/Others Pages/chickenRecipe/ChickenRecipe";
 import DesertRecipe from "../component/Others Pages/desertRecipe/DesertRecipe";
 import ChefRecipe from "../component/Home/Home/chefRecipe/ChefRecipe";
+import Login from "../component/Others Pages/Login/Login";
+import Register from "../component/Others Pages/Register/Register";
+import Privateroute from "./Privateroute";
 // import ChefData from "../component/Home/Home/ChefData";
 
 const route = createBrowserRouter([
@@ -41,11 +44,18 @@ const route = createBrowserRouter([
             },
             {
                 path : 'chefdata/:id',
-                element : <ChefRecipe></ChefRecipe>,
+                element : <Privateroute><ChefRecipe></ChefRecipe></Privateroute>,
                 loader : ({params})=>fetch(`http://localhost:5000/data/${params.id}`)
-            }
-            
+            },
         ]
+    },
+    {
+        path : 'login',
+        element : <Login></Login>
+    },
+    {
+        path : "register",
+        element : <Register></Register>
     }
 ])
 export default route;

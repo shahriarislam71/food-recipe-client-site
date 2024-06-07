@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword,  signOut } from 'firebase/auth';
 import React, { createContext, useEffect, useState } from 'react';
 import app from '../config/firebase.config';
 
@@ -27,6 +27,8 @@ const AuthProvider = ({children}) => {
         }
         return shoppingCart;
     }
+
+    // signIn with google 
 
     const logout = ()=>{
         setLoading(true)

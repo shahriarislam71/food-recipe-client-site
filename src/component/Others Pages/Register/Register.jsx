@@ -50,7 +50,7 @@ const Register = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <div className='form py-20 px-96'>
+                <div className='form py-20 px-1 md:px-96'>
                     <div className='bg-white rounded-lg'>
                         <h1 className='text-center pt-10 text-5xl font-extrabold pb-6'>Register</h1>
                         <div className='px-1 md:px-10'>
@@ -73,7 +73,7 @@ const Register = () => {
                             <input className='emailField' type="url" name="photo" id="photoLabel" placeholder='Enter photo url' required/>
                         </div>
                         
-                        <input className='mt-5 px-1 md:px-10 py-3 rounded-lg block mx-auto button text-white' type="submit" value="Register" />
+                        <input className='mt-5 px-5 md:px-10 py-3 rounded-lg block mx-auto button text-white' type="submit" value="Register" />
                         <br />
                         
                     </div>

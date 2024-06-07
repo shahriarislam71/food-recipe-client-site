@@ -8,6 +8,8 @@ import { Authcontext } from '../../../context/AuthProvider';
 import { GoogleAuthProvider } from "firebase/auth";
 import { getAuth, signInWithPopup } from 'firebase/auth';
 import app from '../../../config/firebase.config';
+import { GithubAuthProvider } from "firebase/auth";
+
 // import { Authcontext } from '../../../context/AuthProvider';
 
 const Login = () => {
@@ -23,6 +25,31 @@ const Login = () => {
     const auth = getAuth(app)
     const handleSignInWIthGoogle = () =>{
         signInWithPopup(auth, provider)
+        .then((result)=>{
+            const user = result.user
+            let list = []
+            const listData = getShoppingCart()
+            console.log(user.displayName)
+            list.push(user.displayName)
+            list.push(user.email)
+            list.push('')
+            list.push(user.photoURL)
+            listData.push(list)
+            localStorage.setItem('shopping-cart',JSON.stringify(listData))
+            console.log(user)
+            navigate(form)
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+    }
+
+
+    // sign In with github 
+    const githubprovider = new GithubAuthProvider();
+    
+    const handleSignInWithGithub = () =>{
+        signInWithPopup(auth, githubprovider)
         .then((result)=>{
             const user = result.user
             let list = []
@@ -85,7 +112,7 @@ const Login = () => {
                             <FontAwesomeIcon icon={faGoogle} />
                             <h1>Login With Google</h1>
                         </div>
-                        <div className='flex gap-3 items-center border-2 border-black mx-1 md:mx-40 md:px-32 px-3 py-3 rounded-lg cursor-pointer othersLogin'>
+                        <div onClick={handleSignInWithGithub} className='flex gap-3 items-center border-2 border-black mx-1 md:mx-40 md:px-32 px-3 py-3 rounded-lg cursor-pointer othersLogin'>
                             <FontAwesomeIcon icon={faGithub} />
                             <h1>Login with Github</h1>
                         </div>

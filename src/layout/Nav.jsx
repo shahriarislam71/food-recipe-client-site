@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './Nav.css'
 import Header from '../component/Home/Header/Header';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Authcontext } from '../context/AuthProvider';
 
 
@@ -34,13 +34,13 @@ const Nav = () => {
             setstate(true)
         }
     }
-    const handleLogOut = () =>{
+    const handleLogOut = () => {
         document.getElementById('logoutt').style.visibility = 'hidden'
         logout()
-        .then()
-        .catch(error =>{
-            console.log(error)
-        })
+            .then()
+            .catch(error => {
+                console.log(error)
+            })
     }
     return (
         <div className='container'>
@@ -51,9 +51,13 @@ const Nav = () => {
                         <h2 className='text-rose-600 font-extrabold text-2xl font-mono italic oldstyle-nums'>Nokshi Polli</h2>
                     </div>
                     <div className='flex gap-5'>
-                        <Link className='text-xl font-bold' to={'/'}>Home</Link>
+                        <div id='activee'>
+                            <NavLink className={`text-xl font-bold `} to={'/'}>Home</NavLink>
+                        </div>
                         {/* <h1 >Home</h1> */}
-                        <h1 className='text-xl font-bold'>Blog</h1>
+                        <div id="blog">
+                            <NavLink to={'/blog'}><h1 className='text-xl font-bold'>Blog</h1></NavLink>
+                        </div>
                     </div>
                     <div>
                         {
@@ -63,7 +67,7 @@ const Nav = () => {
                             users && (<img title={users?.email} onClick={handleState} className={`cursor-pointer h-14 w-14 rounded-full relative inline-block`} src={`${photo}`} alt="" />)
                         }
                     </div>
-                    
+
                     {state ?
                         (<div className='stateTrue'>
                             <h1 className='bg-slate-300'>hi I am rafi</h1>

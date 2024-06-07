@@ -9,6 +9,7 @@ import ChefRecipe from "../component/Home/Home/chefRecipe/ChefRecipe";
 import Login from "../component/Others Pages/Login/Login";
 import Register from "../component/Others Pages/Register/Register";
 import Privateroute from "./Privateroute";
+import Blog from "../component/Others Pages/BLog/Blog";
 // import ChefData from "../component/Home/Home/ChefData";
 
 const route = createBrowserRouter([
@@ -47,6 +48,10 @@ const route = createBrowserRouter([
                 element : <Privateroute><ChefRecipe></ChefRecipe></Privateroute>,
                 loader : ({params})=>fetch(`http://localhost:5000/data/${params.id}`)
             },
+            {
+                path : "blog",
+                element : <Blog></Blog>
+            }
         ]
     },
     {

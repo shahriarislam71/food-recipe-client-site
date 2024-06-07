@@ -106,8 +106,13 @@
     }
 }
 
-img>title{
-    background-color: aqua;
+
+
+#activee a.active{
+    color: red;
+}
+#blog a.active{
+    color: red;
 }
 
 /* .dropbtn {

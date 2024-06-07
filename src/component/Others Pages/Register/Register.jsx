@@ -4,7 +4,8 @@ import { Authcontext } from '../../../context/AuthProvider';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Register = () => {
-    const [error,setError] = useState('')
+    const [emailerror,setemailError] = useState('')
+    const [passworderror,setpasswordError] = useState('')
     const {createUser,getShoppingCart} = useContext(Authcontext)
     const navigate = useNavigate()
     const location = useLocation()
@@ -19,9 +20,11 @@ const Register = () => {
         console.log(emailvalue)
         console.log(passwordvalue)
         console.log(photourl)
+        
 
         createUser(emailvalue,passwordvalue)
         .then((userCredntial)=>{
+            
             const credential = userCredntial.user
             navigate(form)
             let list = []
@@ -34,7 +37,14 @@ const Register = () => {
             localStorage.setItem('shopping-cart',JSON.stringify(data))
         })
         .catch((error)=>{
-            setError(error)
+            console.log(error)
+            if (passwordvalue.length<6){
+                setpasswordError('Password should be at least 6 characters ')
+                
+            }
+            else{
+                setemailError('Email already exist! Please try with another one..')
+            }
         })
     }
     return (
@@ -52,11 +62,12 @@ const Register = () => {
                             <input className='emailField' type="email" name="email" id="emailLabel" placeholder='Enter Your Email' required />
                             
                         </div>
-                        {error?<p className='md:px-10 px-1 text-red-600'>Email already exist! Please try with another one..</p>:""}
+                        {emailerror?<p className='md:px-10 px-1 text-red-600'>{emailerror}</p>:""}
                         <div className='px-1 md:px-10 mt-3'>
                             <label className='text-xl font-bold text-slate-600' htmlFor="passwordLabel">Password</label>
                             <input className='emailField' type="password" name="password" id="passwordLabel" placeholder='Enter password' required />
                         </div>
+                        {passworderror?<p className='md:px-10 px-1 text-red-600'>{passworderror}</p>:""}
                         <div className='px-1 md:px-10 mt-3'>
                             <label className='text-xl font-bold text-slate-600' htmlFor="photoLabel">Photo Url</label>
                             <input className='emailField' type="url" name="photo" id="photoLabel" placeholder='Enter photo url' required/>

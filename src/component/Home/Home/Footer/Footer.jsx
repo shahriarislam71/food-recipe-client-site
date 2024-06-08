@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='grid grid-cols-1 md:grid-cols-4 px-20 mt-32 py-20 gap-5  bg-black text-white'>
                 <div>
                     <div className='flex gap-5 items-center'>
-                        <img className='h-10 w-10' src="../../../../../public/foodIcon.png" alt="" />
+                        <img className='h-10 w-10 rounded-full' src="https://static.vecteezy.com/system/resources/thumbnails/000/665/392/small/810_R0lVIEFORyA0ODctMjk.jpg" alt="" />
                         <p className='text-2xl font-extrabold'>Nokshi Polli</p>
                     </div>
                     <p className='mt-4 text-md'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam velit laudantium eaque, rerum quas labore quam eum assumenda amet esse? Pariatur distinctio aut laborum enim accusamus eos, sapiente similique dolorum!</p>

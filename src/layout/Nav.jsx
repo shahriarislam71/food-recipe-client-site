@@ -47,7 +47,7 @@ const Nav = () => {
             <div className='p-0 md:p-7 px-0 md:px-20 bg-slate-50'>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center gap-4'>
-                        <img className='h-10' src="../../public/foodIcon.png" alt="" />
+                        <img className='h-10 w-10 rounded-full' src="https://static.vecteezy.com/system/resources/thumbnails/000/665/392/small/810_R0lVIEFORyA0ODctMjk.jpg" alt="" />
                         <h2 className='text-rose-600 font-extrabold text-2xl font-mono italic oldstyle-nums'>Nokshi Polli</h2>
                     </div>
                     <div className='flex gap-5'>

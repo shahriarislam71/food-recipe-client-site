@@ -20,33 +20,33 @@ const route = createBrowserRouter([
             {
                 path : '/',
                 element : <Home></Home>,
-                loader:()=>fetch("http://localhost:5000/data")
+                loader : () => fetch("https://food-recipe-server-site-project.vercel.app/data")
                 
             },
             {
                 path : "vegetables",
                 element : <VegetablesRecipe></VegetablesRecipe>,
-                loader : () => fetch("http://localhost:5000/vegetablesrecipe")
+                loader : () => fetch("https://food-recipe-server-site-project.vercel.app/vegetablesrecipe")
             },
             {
                 path : "beef",
                 element : <BeefRecipe></BeefRecipe>,
-                loader : () =>fetch("http://localhost:5000/beefrecipe")
+                loader : () =>fetch("https://food-recipe-server-site-project.vercel.app/beefrecipe")
             },
             {
                 path : 'chicken',
                 element : <ChickenRecipe></ChickenRecipe>,
-                loader : () =>fetch("http://localhost:5000/chickenrecipe")
+                loader : () =>fetch("https://food-recipe-server-site-project.vercel.app/chickenrecipe")
             },
             {
                 path : 'dessert',
                 element : <DesertRecipe></DesertRecipe>,
-                loader : ()=>fetch("http://localhost:5000/dessertrecipe")
+                loader : ()=>fetch("https://food-recipe-server-site-project.vercel.app/dessertrecipe")
             },
             {
                 path : 'chefdata/:id',
                 element : <Privateroute><ChefRecipe></ChefRecipe></Privateroute>,
-                loader : ({params})=>fetch(`http://localhost:5000/data/${params.id}`)
+                loader : ({params})=>fetch(`https://food-recipe-server-site-project.vercel.app/data/${params.id}`)
             },
             {
                 path : "blog",

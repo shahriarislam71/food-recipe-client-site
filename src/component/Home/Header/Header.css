@@ -217,27 +217,27 @@
 
 @keyframes change {
     0% {
-        background-image: url(../../public/Bangladeshi\ Bhorta.jpg);
+        background-image: url('https://images.squarespace-cdn.com/content/v1/5ea5f3913b0ccf06d0ec2563/1591993279471-E5115ADA5EZCQLBY3UFB/10.jpeg');
 
     }
 
     20% {
-        background-image: url(../../../../public/dhoi.webp);
+        background-image: url('https://sinfullyspicy.com/wp-content/uploads/2023/06/1200-by-1200-images-5.jpg');
     }
 
     40% {
-        background-image: url(../../../../public/Shorshe\ Ilish.webp);
+        background-image: url('https://lh6.googleusercontent.com/proxy/yN54EkuNcHLadviLRjpBSQSbnm_ZMCPiS47IuQRBjesc4HQU2KiqBXP_n9XAv8Z2clEsFZ2N9ys4_UQuOqnrEmHdj2IMEDEk7XheUBLYcyoeJtYqsFeVE5henwJ55ho');
     }
 
     60% {
-        background-image: url(../../../../public/fuchka.webp);
+        background-image: url('https://i.ytimg.com/vi/3BJ9duwy--c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAIajOVF5kvTRjb9BcpK73YqAHCSQ');
     }
 
     80% {
-        background-image: url(../../../../public/hallem.webp);
+        background-image: url('https://www.ndtv.com/cooks/images/Haleem%282%29.jpg');
     }
 
     100% {
-        background-image: url(../../../../public/panta\ bhat.webp);
+        background-image: url('https://assets.telegraphindia.com/telegraph/2023/Jun/1686911168_lead.jpg');
     }
 }
